@@ -1,0 +1,7 @@
+name = Custom Batch
+description = This is a POC module to learn the Batch API.
+core = 7.x
+package = custom_batch
+files[] = custom_batch.admin.inc
+files[] = custom_batch.batch.inc
+dependencies[] = paradox

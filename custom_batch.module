@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * This file holds the code for the custom module Custom Batch
+ */
+
+/**
+ * Implements hook menu().
+ */
+function custom_batch_menu() {
+  $items['admin/paradox/custom-batch'] = array(
+    'title' => 'Batches',
+    'description' => 'This is a custom POC module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_batch_admin_form'),
+    'access arguments' => array('access administration menu'),
+    'file' => 'custom_batch.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
